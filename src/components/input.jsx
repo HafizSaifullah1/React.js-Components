@@ -2,10 +2,14 @@ import React from 'react'
 
 function InputBtn(prop) {
     return (
+
         <input
-        onChange={prop.inputChange}
-        style={{border:"black 2px solid", borderRadius:"10", textAlign:"center",marginTop:"10px", marginLeft:"43%"}}
-        placeholder='Enter your Value'/>
+            onChange={prop.inputChange}
+            type="text"
+            className="border-2 border-black rounded-lg text-center mt-2 mx-auto block w-10/12 sm:w-8/12 md:w-6/12 lg:w-4/12"
+
+            placeholder='Enter your Value'
+        />
     )
 }
 
