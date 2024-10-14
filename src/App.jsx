@@ -5,9 +5,9 @@ import './App.css'
 import ABButton from './components/ABButton'
 import InputBtn from './components/input'
 import TableComponent from './components/table'
-
-
-
+// import Navbar from './components/navbar'
+import Footer from './components/Footer'
+import Navbar from './layout/Navbar'
 function App() {
 
   // button Component
@@ -32,13 +32,19 @@ function App() {
 
   return (
     <div>
+
+      {/* <div>
+        <Navbar/>
+      </div> */}
+      {/* 
       <div>
         <h1 className='text-center text-4xl font-bold pt-5'>React.js Component</h1>
-      </div>
+      </div> */}
 
+      {/* 
       <div className='p-8'>
         <div className='text-center pt-8'>
-          <h1 className='text-2xl font-bold mb-4 text-center'>Button Component</h1>
+          <h1 className='text-2xl text-[red] font-bold mb-4 text-center'>Button Component</h1>
           <ABButton
 
             btnClick={buttonClick}
@@ -48,25 +54,36 @@ function App() {
           <ABButton lable="SignUp" />
           <ABButton lable="Ok" />
         </div>
-      </div>
+      </div> */}
 
-      <div className='p-8'>
+      {/* <div className='p-8'>
         <h1 className='text-2xl font-bold text-center'>Input component</h1>
         <InputBtn
           inputChange={inputType}
           text="type"
         />
-      </div>
+      </div> */}
 
 
-      <div className="p-8">
+      {/* <div className="p-8">
         <h1 className="text-2xl font-bold mb-4 text-center">User Data Table</h1>
-        {/* Pass the data array to the TableComponent as a prop */}
+
         <TableComponent data={data} />
-      </div>
+      </div> */}
 
+      {/* <div>
+        <Footer/>
+      </div> */}
 
+      <div>
+        <Navbar />
+
+        <div className="bg-gradient-to-r w-full h-screen from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% flex items-center justify-center">
+          <h1 className="text-center text-xl font-bold">Hello React</h1>
+        </div>
     </div>
+
+    </div >
   )
 }
 
